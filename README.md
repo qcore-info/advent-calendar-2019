@@ -16,14 +16,7 @@ qore_sdk-0.1.0-cp36-cp36m-linux_x86_64.whl
 
 ### 依存ライブラリのインストール
 
-- Using Pipenv
-
-```
-pipenv sync
-```
-
-- Using pip
-
 ```
 pip install -r requirements.txt
+pip install qore_sdk-0.1.0-cp36-cp36m-linux_x86_64.whl
 ```
