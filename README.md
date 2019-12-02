@@ -25,6 +25,8 @@ pip install -r requirements.txt
 pip install qore_sdk-0.1.0-cp36-cp36m-linux_x86_64.whl
 ```
 
+QoreSDK内の各モジュールの使い方は、help関数などをして、docstringを参照してください。
+
 ## 弊社社員による解説記事
 [リザーバコンピューティングの世界 \~Qoreとともに\~](https://qiita.com/ryoppippi/items/f607c8828238094eade0)
 
