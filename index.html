@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>QoreSDK 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html#document-index" class="icon icon-home"> QoreSDK
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-qore_sdk">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#module-qore_sdk.client">qore_sdk.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#module-qore_sdk.featurizer">qore_sdk.featurizer module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#module-qore_sdk.utils">qore_sdk.utils module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html#document-index">QoreSDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html#document-index">Docs</a> &raquo;</li>
+        
+      <li>QoreSDK 0.1.0 documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="qoresdk-by-quantumcore">
+<h1>QoreSDK by QuantumCore<a class="headerlink" href="#qoresdk-by-quantumcore" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<span id="document-qore_sdk"></span><div class="section" id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-qore_sdk.client">
+<span id="qore-sdk-client-module"></span><h2>qore_sdk.client module<a class="headerlink" href="#module-qore_sdk.client" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="qore_sdk.client.WebQoreClient">
+<em class="property">class </em><code class="sig-prename descclassname">qore_sdk.client.</code><code class="sig-name descname">WebQoreClient</code><a class="headerlink" href="#qore_sdk.client.WebQoreClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>WebQoreと通信するためのクライアント</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>username</strong> (<em>str</em>) – 発行されたユーザ名</p></li>
+<li><p><strong>password</strong> (<em>str</em>) – 発行されたパスワード</p></li>
+<li><p><strong>endpoint</strong> (<em>str</em>) – 発行されたendpoint</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="qore_sdk.client.WebQoreClient.classifier_predict">
+<code class="sig-name descname">classifier_predict</code><a class="headerlink" href="#qore_sdk.client.WebQoreClient.classifier_predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>分類用のモデルの精度を検証する.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy.ndarray</em>) – 推論用データ X.shape = (データ数, 時間方向, 実データ)</p></li>
+<li><p><strong>softmax_top</strong> (<em>int</em>) – (Optional) 1以上を指定すると、各データでの推論ラベルの上位とその確率値を返す</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>{‘Y’: 正解ラベル (List(int)), ‘res’: ‘ok’}</p>
+<p>{‘Y’: 正解ラベル (List(List(int))), ‘softmax’: List(List(float))) ‘res’: ‘ok’} if softmax_top &gt; 1</p>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qore_sdk.client.WebQoreClient.classifier_test">
+<code class="sig-name descname">classifier_test</code><a class="headerlink" href="#qore_sdk.client.WebQoreClient.classifier_test" title="Permalink to this definition">¶</a></dt>
+<dd><p>分類用のモデルの精度を検証する.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy.ndarray</em>) – 検証データ X.shape = (データ数, 時間方向, 実データ)</p></li>
+<li><p><strong>Y</strong> (<em>numpy.ndarray</em>) – 正解ラベル Y.shape = (データ数, 1)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>{‘accuracy’: accuracy (float), ‘f1’: f1 value (float), ‘res’: ‘ok’}</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qore_sdk.client.WebQoreClient.classifier_train">
+<code class="sig-name descname">classifier_train</code><a class="headerlink" href="#qore_sdk.client.WebQoreClient.classifier_train" title="Permalink to this definition">¶</a></dt>
+<dd><p>分類用のモデルを学習させる.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy.ndarray</em>) – 学習データ X.shape = (データ数, 時間方向, 実データ)</p></li>
+<li><p><strong>Y</strong> (<em>numpy.ndarray</em>) – 正解ラベル Y.shape = (データ数, 1)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>{‘res’: ‘ok’, ‘train_time’: train time (float)}</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qore_sdk.client.WebQoreClient.regression_predict">
+<code class="sig-name descname">regression_predict</code><a class="headerlink" href="#qore_sdk.client.WebQoreClient.regression_predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>分類用のモデルの精度を検証する.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> (<em>numpy.ndarray</em>) – 推論用データ X.shape = (データ数, 時間方向, 実データ)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>{‘Y’: predicted value (List(float)), ‘res’: ‘ok’}</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qore_sdk.client.WebQoreClient.regression_test">
+<code class="sig-name descname">regression_test</code><a class="headerlink" href="#qore_sdk.client.WebQoreClient.regression_test" title="Permalink to this definition">¶</a></dt>
+<dd><p>回帰用のモデルの精度を検証する</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy.ndarray</em>) – 検証データ X.shape = (データ数, 時間方向, 実データ)</p></li>
+<li><p><strong>Y</strong> (<em>numpy.ndarray</em>) – 正解ラベル Y.shape = (データ数, 1)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>{‘mse’: mean square error (float), ‘res’: ‘ok’}</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qore_sdk.client.WebQoreClient.regression_train">
+<code class="sig-name descname">regression_train</code><a class="headerlink" href="#qore_sdk.client.WebQoreClient.regression_train" title="Permalink to this definition">¶</a></dt>
+<dd><p>回帰用のモデルを学習させる</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy.ndarray</em>) – 学習データ X.shape = (データ数, 時間方向, 実データ)</p></li>
+<li><p><strong>Y</strong> (<em>numpy.ndarray</em>) – 正解データ Y.shape = (データ数, 1)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>{‘res’: ‘ok’, ‘train_time’: train time (float)}</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-qore_sdk.featurizer">
+<span id="qore-sdk-featurizer-module"></span><h2>qore_sdk.featurizer module<a class="headerlink" href="#module-qore_sdk.featurizer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="qore_sdk.featurizer.Featurizer">
+<em class="property">class </em><code class="sig-prename descclassname">qore_sdk.featurizer.</code><code class="sig-name descname">Featurizer</code><a class="headerlink" href="#qore_sdk.featurizer.Featurizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>時系列の周波数分解による特徴抽出器。n_filtersでいくつの特徴に分解するかを定める。</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n_filters</strong> (<em>int</em>) – 抽出する特徴量の数.</p>
+</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="mi">10</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">n_filters</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">featurizer</span> <span class="o">=</span> <span class="n">Featurizer</span><span class="p">(</span><span class="n">n_filters</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">features</span> <span class="o">=</span> <span class="n">featurizer</span><span class="o">.</span><span class="n">featurize</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">features</span><span class="o">.</span><span class="n">shape</span>
+<span class="go">(10, 10, 40)</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="qore_sdk.featurizer.Featurizer.featurize">
+<code class="sig-name descname">featurize</code><a class="headerlink" href="#qore_sdk.featurizer.Featurizer.featurize" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy.ndarray</em>) – データ. 任意の次元数.</p></li>
+<li><p><strong>log_scale</strong> (<em>bool</em>) – 周波数分解後に対数をとるかどうか.</p></li>
+<li><p><strong>axis</strong> (<em>int</em>) – 特徴抽出をする時系列がある軸. Noneの場合、axisは一番後ろの軸.</p></li>
+<li><p><strong>plot_sample</strong> (<em>bool</em>) – Deprecated. 特徴抽出の過程を可視化するかどうか.</p></li>
+<li><p><strong>random</strong> (<em>bool</em>) – Deprecated. 可視化するサンプルをランダムに選択するかどうか.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>分解済みデータ.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-qore_sdk.utils">
+<span id="qore-sdk-utils-module"></span><h2>qore_sdk.utils module<a class="headerlink" href="#module-qore_sdk.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="qore_sdk.utils.sliding_window">
+<code class="sig-prename descclassname">qore_sdk.utils.</code><code class="sig-name descname">sliding_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qore_sdk.utils.sliding_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>時系列を複数の小時系列に分割する。Featurizerなどの特徴抽出器の前段で主に使われる。</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy.ndarray</em>) – 任意次元数のデータ</p></li>
+<li><p><strong>width</strong> (<em>int</em>) – 小時系列の長さ</p></li>
+<li><p><strong>stepsize</strong> (<em>int</em>) – 分割する際の移動幅</p></li>
+<li><p><strong>axis</strong> (<em>int</em>) – 時系列データの処理軸</p></li>
+<li><p><strong>out_axis</strong> (<em>int</em>) – 分割数をどの軸に反映させるか. Noneの場合, out_axis==axis.</p></li>
+<li><p><strong>y</strong> (<em>numpy.ndarray</em>) – 入力Xに対するターゲットとなる任意次元数の配列y（主に1次元配列）. 分類タスクの文脈で、時系列の各サンプルにラベル付けされている場合、分割した小時系列には複数のラベルが対応することになる。小時系列一つに対して一つのラベルを対応させたい場合、yもXと同様に分割し、複数のyの値の中での最頻値や最後のyの値を小時系列のラベルとする.</p></li>
+<li><p><strong>y_def</strong> (<em>str</em>) – yも同様に分割した場合、複数のyの値から小時系列に対応するラベルをどう算出するかを指定する. ‘last’の場合は複数のyの値のうち最後の値をラベルとする. ‘mode’の場合は最頻値.</p></li>
+<li><p><strong>y_axis</strong> (<em>int</em>) – どの軸で最頻値をとるかを指定する.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>X</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="mi">550</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">550</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">sliding_window</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+<span class="go">(10, 10, 100)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="qore_sdk.utils.under_sample">
+<code class="sig-prename descclassname">qore_sdk.utils.</code><code class="sig-name descname">under_sample</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qore_sdk.utils.under_sample" title="Permalink to this definition">¶</a></dt>
+<dd><p>under-samplingのための関数。n_samples_per_classでクラス当たりのサンプル数を定める。</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy.ndarray</em>) – データ</p></li>
+<li><p><strong>y</strong> (<em>numpy.ndarray</em>) – ラベル</p></li>
+<li><p><strong>n_samples_per_class</strong> (<em>float</em>) – クラス当たりのサンプル数</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>X, y</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(numpy.ndarray, numpy.ndarray)</p>
+</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="mi">10</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span><span class="p">,</span> <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">counts</span>
+<span class="go">array([3, 7])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">under_sample</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n_samples_per_class</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span><span class="p">,</span> <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">return_counts</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">counts</span>
+<span class="go">array([3, 3])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+<hr class="docutils" />
+<p><a class="reference external" href="http://qcore.co.jp">About Us</a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, QuantumCore
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
