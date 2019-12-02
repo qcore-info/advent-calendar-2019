@@ -27,4 +27,5 @@ pip install qore_sdk-0.1.0-cp36-cp36m-linux_x86_64.whl
 
 ## 弊社社員による解説記事
 [リザーバコンピューティングの世界 \~Qoreとともに\~](https://qiita.com/ryoppippi/items/f607c8828238094eade0)
+
 [QoreSDKの紹介とQoreで不整脈検出](https://qiita.com/sk1010k/items/d8ca3332e6a1f1f939a1)
