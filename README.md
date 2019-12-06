@@ -3,6 +3,8 @@
 ※現在Advent Calenderが開催中です
 
 [深層学習以外の機械学習と応用技術 by QuantumCore Advent Calendar 2019](https://qiita.com/advent-calendar/2019/quantumcore_reservoir)
+  
+また、Qoreシリーズ全般の[コミュニティSlack](https://forms.gle/6pmhD8owo6Fa8xBF6)を作成しましたので、是非ご参加ください
 
 ## 使い方
 
