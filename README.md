@@ -1,6 +1,7 @@
 # WebQore demo
 
-※現在Advent Calenderが開催中です
+~~現在Advent Calenderが開催中です~~  
+→ 無事に終了いたしました。ありがとうございました。
 
 [深層学習以外の機械学習と応用技術 by QuantumCore Advent Calendar 2019](https://qiita.com/advent-calendar/2019/quantumcore_reservoir)
   
@@ -10,9 +11,10 @@
 
 ### WebQoreのAPIアカウント申請とQoreSDKのダウンロード
 
-APIの無料アカウント（2ヶ月間）を発行しますので、以下のURLから「利用タイプ」で「Qiitaアドベントカレンダ執筆」を選択し、Qiitaアカウント名、メールアドレスを入力し送信ください。
+~~APIの無料アカウント（2ヶ月間）を発行しますので、以下のURLから「利用タイプ」で「Qiitaアドベントカレンダ執筆」を選択し、Qiitaアカウント名、メールアドレスを入力し送信ください。~~　　
+  
+→ 2019/12/25をもって無料アカウント発行受付を終了いたしました。ありがとうございました。アカウント利用についての情報は[弊社お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdnUZw1sd6i9G51so8OLCbIoyLNiECZPXQhfvBvch98Zmx0Eg/viewform?usp=send_form)へお送りください。
 
-https://docs.google.com/forms/d/e/1FAIpQLSffXV4AQQFsj_SsGujBvYgCt3qhEb4Id-Gv3QvWOV5iVp1meA/viewform
 
 OS・PythonのバージョンにあったQoreSDKをダウンロードし、プロジェクトの直下に配置する。
 
