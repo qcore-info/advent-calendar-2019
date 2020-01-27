@@ -37,3 +37,10 @@ QoreSDK内の各モジュールの使い方は、以下のドキュメント及�
 [リザーバコンピューティングの世界 \~Qoreとともに\~](https://qiita.com/ryoppippi/items/f607c8828238094eade0)
 
 [QoreSDKの紹介とQoreで不整脈検出](https://qiita.com/sk1010k/items/d8ca3332e6a1f1f939a1)
+
+## License
+
+Copyright (c) 2020 QuantumCore Inc.
+
+QuantumCore Confidential
+
